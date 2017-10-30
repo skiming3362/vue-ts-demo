@@ -16,7 +16,7 @@ export default {
     },
     methods: {
         foo(x: string): string {
-            return x.length
+            return x
         }
     }
     

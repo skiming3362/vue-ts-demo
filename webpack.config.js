@@ -49,12 +49,19 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    noInfo: true,
+    host: '127.0.0.1',
+    port: 8080,
+    hot: true,
+    clientLogLevel: "none"
   },
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: 'cheap-module-source-map',
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
