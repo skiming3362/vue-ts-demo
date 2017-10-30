@@ -58,7 +58,7 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: 'cheap-module-source-map',
+  devtool: 'cheap-module-eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ]

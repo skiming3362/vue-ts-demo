@@ -11,7 +11,7 @@ export default {
     data() {
         return {
             name: 'World',
-            test: 'asd222'
+            test: 'asd444'
         }
     },
     methods: {
